@@ -1,0 +1,26 @@
+﻿#boxAggiungiProdotto
+{
+    margin-bottom: 20px;
+}
+
+.table td, .table th
+{
+    text-align: center;
+}
+
+#modalLoading
+{
+    position: fixed;
+    margin-left: -260px;
+    display: block;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #5BB75B;
+}
+
+    #modalLoading > div.modal-body
+    {
+        margin-left: 135px;
+    }

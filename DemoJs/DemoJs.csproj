@@ -126,7 +126,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Css\Stile.css" />
     <Content Include="Global.asax" />
+    <Content Include="Immagini\loading.gif" />
     <Content Include="Index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -134,6 +136,10 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
+    <Content Include="Scripts\Servizio\Loading.js" />
+    <Content Include="Scripts\ViewModel\CarrelloViewModel.js" />
+    <Content Include="Scripts\ViewModel\OrdineViewModel.js" />
+    <Content Include="Scripts\ViewModel\ProdottoViewModel.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
-
+    <link href="Css/Stile.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-1.9.1.js"></script>
     <script src="Scripts/bootstrap.js"></script>
 
     <script src="Scripts/knockout-2.2.1.js"></script>
     <script src="Scripts/main.js"></script>
+    <script src="Scripts/Servizio/Loading.js"></script>
 
-    <title></title>
+    <title>Demo JS - Esempio: Ordine</title>
 </head>
 <body>
     <div class="row">
-
         <div class="container">
             <div class="span8">
                 <h2>Ordine</h2>
-                <div class="span8">
-                    <input id="code" type="text" class="input-xlarge search-query" />
-                    <button id="add" type="submit" class="btn">Add</button>
+                <div id="boxAggiungiProdotto" class="span8">
+                    <input id="txtAggiungiProdotto" type="text" class="input-xlarge search-query" />
+                    <button id="add" type="submit" class="btn">Aggiungi prodotto</button>
                 </div>
                 <table id="tab" class="table table-striped table-bordered table-hover">
                     <thead>
@@ -37,8 +37,9 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="3"></td>
+                            <td colspan="2"></td>
                             <td>Totale <span id="totale"></span></td>
+                            <td></td>
                         </tr>
                     </tfoot>
                 </table>
@@ -49,6 +50,13 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="modalLoading" class="modal hide">
+        <div class="modal-body center">
+            <span>
+                <img src="Immagini/loading.gif" width="40" /></span>
+            <span>Caricamento dati..</span>
         </div>
     </div>
 </body>
