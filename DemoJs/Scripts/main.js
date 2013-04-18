@@ -16,7 +16,7 @@ function cercaProdotto() {
     var testoCercato = $.trim($("#txtAggiungiProdotto")[0].value);
 
     $.ajax({
-        url: "../Carrello/GetProdotto?codice=" + testoCercato,
+        url: "api/Carrello/" + testoCercato,
         type: "GET",
         dataType: "json",
         timeout: 30000,

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
 namespace DemoJs
 {
@@ -9,6 +6,11 @@ namespace DemoJs
     {
         public static void Register(HttpConfiguration config)
         {
+            config.Routes.MapHttpRoute(
+                name: "CarrelloApi",
+                routeTemplate: "api/Carrello/{codice}",
+                defaults: new { controller = "Carrello", action = "GetProdotto" });
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
