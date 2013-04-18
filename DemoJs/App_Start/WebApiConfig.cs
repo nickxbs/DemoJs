@@ -10,6 +10,11 @@ namespace DemoJs
         public static void Register(HttpConfiguration config)
         {
             config.Routes.MapHttpRoute(
+                name: "CarrelloApi",
+                routeTemplate: "api/Carrello/{codice}",
+                defaults: new { controller = "Carrello", action = "GetProdotto" });
+
+            config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }

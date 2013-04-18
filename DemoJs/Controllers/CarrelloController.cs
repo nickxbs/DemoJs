@@ -13,9 +13,7 @@ namespace DemoJs.Controllers
         public Prodotto GetProdotto(int codice)
         {
             var prodotti = new Dictionary<int, Prodotto>();
-            prodotti.Add(1001, new Prodotto { ean = "1001", descrizione = "SOFFISOF PANN RETT C/BARRI 30P", ditta = "SILC SpA" });
-
-
+            
             prodotti.Add(1001, new Prodotto { ean = "1001", descrizione = "SOFFISOF PANN RETT C/BARRI 30P", ditta = "SILC SpA" });
             prodotti.Add(1002, new Prodotto { ean = "1002", descrizione = "RENILON 4.0 ALBICOCCA 6X125ML", ditta = "NUTRICIA ITALIA SpA" });
             prodotti.Add(1003, new Prodotto { ean = "1003", descrizione = "BIAGLUT PANCARRE 250G", ditta = "BIAGLUT (HEINZ ITALIA SpA)" });
