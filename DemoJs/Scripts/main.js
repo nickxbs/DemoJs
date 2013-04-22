@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var $add = $("#add");
-    var $code = $("#code");
+    var $code = $("#txtAggiungiProdotto");
     var $btnConferma = $("#btnConferma");
 
     $code.keypress(function (e) {
