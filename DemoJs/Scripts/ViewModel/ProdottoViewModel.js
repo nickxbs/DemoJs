@@ -1,30 +1,22 @@
 ﻿define("ProdottoViewModel",
     function () {
+        //#region Funzioni di servizio
+        //#endregion
 
         //#region Costruttore modello SchedaIpossemica
-        var ViewModelConstructor = function () {
+        var ViewModelConstructor = function (item) {
             var self = this;
-
-            //#region Proprietà categoria
-            self.Codice = '';
-            self.Descrizione = '';
-            self.Ditta = '';
-            //#region Observable
-            self.qta = ko.observable(0);
-            //#endregion
-
-            //#endregion
-
-            //#region Computed
-
-            //#endregion
+            self.Codice = item.ean;
+            self.Descrizione = item.descrizione;
+            self.Ditta = item.ditta;
+            self.Qta = ko.observable(item.qta);
 
             //#region Funzioni
-            self.svuotaProdotto = function () {
-            };
+
             //#endregion
         };
+        //#endregion
 
         return ViewModelConstructor;
-        //#endregion
+
     });

@@ -1,38 +1,19 @@
+requirejs.config({
+    baseUrl: '../Scripts/ViewModel',
+});
+
 $(document).ready(function () {
-    riempiCarrello();
+    var alertError = $('[id^="txtAlert"]');
+    alertError.hide();
+    $("#divAlert").hide();
+
+    require(["OrdineViewModel"], function (OrdineViewModel) {
+        var ordineViewModel = new OrdineViewModel();
+        globalModelloOrdine = ordineViewModel;
+        ko.applyBindings(ordineViewModel);
+    });
 });
 
 //#region Variabili globali
 var globalModelloOrdine;
-var globalModelloCarrello;
-var globalModelloProdotti;
-//#endregion
-
-//#region Funzioni di servizio
-function riempiCarrello() { }
-function cercaProdotto() {
-    openModalLoading("modalLoading");
-
-    var testoCercato = $.trim($("#txtAggiungiProdotto")[0].value);
-
-    $.ajax({
-        url: "api/Carrello/" + testoCercato,
-        type: "GET",
-        dataType: "json",
-        timeout: 30000,
-        success: function (prodotti) {
-            if (!prodotti.StatusCode) {
-                //globalmodelSchedaIpossemica.bind(schedaIpossemica);
-            } else {
-                alert("Errore");
-            }
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            closeModalLoading("modalLoading");
-            alert((jqXHR.responseText).Message, errorThrown);
-        }
-    });
-
-    closeModalLoading("modalLoading");
-}
 //#endregion

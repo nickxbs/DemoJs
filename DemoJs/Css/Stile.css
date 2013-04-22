@@ -1,26 +1,109 @@
 ﻿#boxAggiungiProdotto
 {
     margin-bottom: 20px;
+    margin-left: 0px;
 }
 
 .table td, .table th
 {
     text-align: center;
+    vertical-align: middle;
 }
 
 #modalLoading
 {
     position: fixed;
-    margin-left: -260px;
+    margin-left: -465px;
     display: block;
     display: block;
     font-size: 18px;
     font-weight: bold;
     color: white;
     background-color: #5BB75B;
+    margin-top: 62px;
 }
 
     #modalLoading > div.modal-body
     {
         margin-left: 135px;
     }
+
+.modal-backdrop, .modal-backdrop.fade.in
+{
+    opacity: 0.8;
+}
+
+.modal-backdrop
+{
+    background-color: white;
+}
+
+.btn.btn-webcare-green
+{
+    background-color: #5BB75B;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-attachment: scroll;
+    background-position: center center;
+}
+
+#btnElimina
+{
+    background-image: url(../Immagini/cestino.png);
+}
+
+#modalConferma
+{
+    margin-left: -468px;
+}
+
+.hero-unit-success
+{
+    border-radius: 6px 6px 6px 6px;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 30px;
+    padding: 60px;
+    text-align: center;
+    border-color: #D6E9C6;
+    background: url(../Immagini/thumb_up.svg) no-repeat 20px 46px white;
+}
+
+#modalSuccess
+{
+    margin-left: -554px;
+    margin-top: 67px;
+    height: 100px;
+    width: 617px;
+}
+
+    #modalSuccess > div[id^="boxSuccess"]
+    {
+        margin-top: 39px;
+    }
+
+        #modalSuccess > div[id^="boxSuccess"] > span
+        {
+            margin-left: 48px;
+        }
+
+        #modalSuccess > div[id^="boxSuccess"] > button
+        {
+            margin-top: 7px;
+        }
+
+.bloccoErrore
+{
+    background-color: #DA4F49;
+    color: black;
+    /*background-color: #FC3;*/
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Verdana, Arial;
+    padding: 8px 35px 8px 14px;
+    border-radius: 4px 4px 4px 4px;
+    text-shadow: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
