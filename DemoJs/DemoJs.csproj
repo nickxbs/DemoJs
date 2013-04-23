@@ -136,9 +136,6 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
-    <Content Include="Scripts\Servizio\FunzioniDiServizio.js" />
-    <Content Include="Scripts\Servizio\Loading.js" />
-    <Content Include="Scripts\ViewModel\CarrelloViewModel.js" />
     <Content Include="Scripts\ViewModel\OrdineViewModel.js" />
     <Content Include="Scripts\ViewModel\ProdottoViewModel.js" />
     <Content Include="Web.config" />

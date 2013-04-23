@@ -1,19 +1,20 @@
-requirejs.config({
-    baseUrl: '../Scripts/ViewModel',
-});
+//requirejs.config({
+//    baseUrl: '../Scripts/ViewModel',
+//});
 
 $(document).ready(function () {
-    var alertError = $('[id^="txtAlert"]');
-    alertError.hide();
+    var $txtAggiungiProdotto = $("#txtAggiungiProdotto");
     $("#divAlert").hide();
+    $txtAggiungiProdotto.focus();
 
-    require(["OrdineViewModel"], function (OrdineViewModel) {
-        var ordineViewModel = new OrdineViewModel();
-        globalModelloOrdine = ordineViewModel;
-        ko.applyBindings(ordineViewModel);
+    $txtAggiungiProdotto.keypress(function (e) {
+        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+            e.preventDefault();
+            $("#add").click();
+            return false;
+        }
     });
-});
 
-//#region Variabili globali
-var globalModelloOrdine;
-//#endregion
+    var ordineViewModel = new OrdineViewModel();
+    ko.applyBindings(ordineViewModel);
+});

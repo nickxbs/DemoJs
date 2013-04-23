@@ -10,24 +10,6 @@
     vertical-align: middle;
 }
 
-#modalLoading
-{
-    position: fixed;
-    margin-left: -465px;
-    display: block;
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background-color: #5BB75B;
-    margin-top: 62px;
-}
-
-    #modalLoading > div.modal-body
-    {
-        margin-left: 135px;
-    }
-
 .modal-backdrop, .modal-backdrop.fade.in
 {
     opacity: 0.8;
@@ -106,4 +88,15 @@
     text-shadow: none;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.sfondo-blu
+{
+    background-color: #006DCC;
+}
+
+.sfondo-bianco
+{
+    text-align: center;
+    background-color: white;
 }
